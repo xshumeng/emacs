@@ -1,0 +1,90 @@
+[submodule "packages/exec-path"]
+	path = packages/exec-path
+	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule "packages/swiper"]
+	path = packages/swiper
+	url = https://github.com/abo-abo/swiper.git
+[submodule "packages/highlight"]
+	path = packages/highlight
+	url = https://github.com/gennad/auto-highlight-symbol.git
+[submodule "packages/magit"]
+	path = packages/magit
+	url = https://github.com/magit/magit.git
+[submodule "packages/dash.el"]
+	path = packages/dash.el
+	url = https://github.com/magnars/dash.el.git
+[submodule "packages/with-editor"]
+	path = packages/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "packages/transient"]
+	path = packages/transient
+	url = https://github.com/magit/transient.git
+[submodule "packages/diff-highlight"]
+	path = packages/diff-highlight
+	url = https://github.com/dgutov/diff-hl.git
+[submodule "packages/projectile"]
+	path = packages/projectile
+	url = https://github.com/bbatsov/projectile.git
+[submodule "packages/which-key"]
+	path = packages/which-key
+	url = https://github.com/justbur/emacs-which-key.git
+[submodule "packages/phi-rectangle"]
+	path = packages/phi-rectangle
+	url = https://github.com/zk-phi/phi-rectangle.git
+[submodule "packages/undo-tree"]
+	path = packages/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "packages/switch-window"]
+	path = packages/switch-window
+	url = https://github.com/dimitri/switch-window.git
+[submodule "packages/yasnippet"]
+	path = packages/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "packages/yasnippet-snippets"]
+	path = packages/yasnippet-snippets
+	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
+[submodule "packages/markdown-mode"]
+	path = packages/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "packages/youdao-dictionary"]
+	path = packages/youdao-dictionary
+	url = https://github.com/xuchunyang/youdao-dictionary.el.git
+[submodule "packages/chinese-word-at-point"]
+	path = packages/chinese-word-at-point
+	url = https://github.com/xuchunyang/chinese-word-at-point.el.git
+[submodule "packages/popup"]
+	path = packages/popup
+	url = https://github.com/auto-complete/popup-el.git
+[submodule "packages/pos-tip"]
+	path = packages/pos-tip
+	url = https://github.com/syohex/pos-tip.git
+[submodule "packages/names"]
+	path = packages/names
+	url = https://github.com/Malabarba/names.git
+[submodule "packages/counsel-projectile"]
+	path = packages/counsel-projectile
+	url = https://github.com/ericdanan/counsel-projectile.git
+[submodule "packages/org-bullets"]
+	path = packages/org-bullets
+	url = https://github.com/sabof/org-bullets.git
+[submodule "packages/company-mode"]
+	path = packages/company-mode
+	url = https://github.com/company-mode/company-mode.git
+[submodule "packages/hydra"]
+	path = packages/hydra
+	url = https://github.com/abo-abo/hydra.git
+[submodule "packages/themes/dracula"]
+	path = packages/themes/dracula
+	url = https://github.com/dracula/emacs.git
+[submodule "packages/themes/solarized"]
+	path = packages/themes/solarized
+	url = https://github.com/bbatsov/solarized-emacs.git
+[submodule "packages/themes/zenburn"]
+	path = packages/themes/zenburn
+	url = https://github.com/bbatsov/zenburn-emacs.git
+[submodule "packages/s.el"]
+	path = packages/s.el
+	url = https://github.com/magnars/s.el.git
+[submodule "packages/dockerfile"]
+	path = packages/dockerfile
+	url = https://github.com/spotify/dockerfile-mode.git

@@ -1,0 +1,7 @@
+;;; ${1:package} --- Summary:
+;;; Commentary:
+;;; Code:
+
+
+(provide '${2:`(file-name-sans-extension (buffer-name))`})
+;;; ${3:`(buffer-name)`} ends here
