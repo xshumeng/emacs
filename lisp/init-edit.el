@@ -98,6 +98,8 @@ occurence of CHAR."
 
 (add-hook 'package-menu-mode-hook 'hl-line-mode)
 
+(put 'narrow-to-region 'disabled nil)
+
 (provide 'init-edit)
 ;;; Local Variables:
 ;;; coding: utf-8

@@ -66,6 +66,8 @@
 
 (require 'init-docker)
 
+(require 'init-page-break-lines)
+
 ;;; Local Variables:
 ;;; coding: utf-8
 ;;; End:

@@ -6,10 +6,8 @@
 (push (expand-emacs-dir "packages/org-bullets") load-path)
 (require 'org-bullets)
 ;; * 乾一 * 坤二 * 离三 * 震四 * 巽五 * 坎六 * 艮七 * 坤八
-(defvar org-bullets-bullet-list
-  '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷"))
+(defvar org-bullets-bullet-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷"))
 (add-hook 'org-mode-hook 'org-bullets-mode)
-
 
 ;;; 摘抄自 https://coldnew.github.io/a1ed40e3/
 (defadvice org-html-paragraph (before org-html-paragraph-advice (paragraph contents info) activate)
