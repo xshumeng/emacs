@@ -100,6 +100,9 @@ occurence of CHAR."
 
 (put 'narrow-to-region 'disabled nil)
 
+;;; 文件加密配置
+(setf epa-file-select-keys nil)
+
 (provide 'init-edit)
 ;;; Local Variables:
 ;;; coding: utf-8

@@ -6,7 +6,8 @@
 (push (expand-emacs-dir "packages/org-bullets") load-path)
 (require 'org-bullets)
 ;; * 乾一 * 坤二 * 离三 * 震四 * 巽五 * 坎六 * 艮七 * 坤八
-(defvar org-bullets-bullet-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷"))
+(custom-set-variables
+ '(org-bullets-bullet-list '("☰" "☱" "☲" "☳" "☴" "☵" "☶" "☷")))
 (add-hook 'org-mode-hook 'org-bullets-mode)
 
 ;;; 摘抄自 https://coldnew.github.io/a1ed40e3/
@@ -50,18 +51,15 @@
                             (local-set-key (kbd "C-c s i") 'org-insert-src-block)
                             ;; (auto-fill-mode)
                             ))
-(setf org-src-fontify-natively t)
+(setf org-src-fontify-natively t) ; 高亮ORG代码块中的代码
 
 (with-eval-after-load 'org
-  ;; Org mode refile setting
-  (add-to-list 'org-refile-targets '("~/Documents/geting-things-done/finished.org" . (:level . 1)))
-  (add-to-list 'org-refile-targets '("~/Documents/geting-things-done/finished.org" . (:level . 2)))
   ;; Org mode agenda setting
-  (add-to-list 'org-agenda-files "~/Documents/geting-things-done")
+  (add-to-list 'org-agenda-files "~/Data/geting-things-done")
   (define-key global-map "\C-cc" 'org-capture)
-  (setf org-capture-templates '(("e" "每日英语" entry (file+headline "~/Documents/geting-things-done/study-plan.org" "每日英语") "**** DONE %?")))
   (setq org-image-actual-width 500)
   )
 
+(setf truncate-lines nil)
 (provide 'init-org-mode)
 ;;; init-org-mode.el ends here

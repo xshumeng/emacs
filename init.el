@@ -68,6 +68,10 @@
 
 (require 'init-page-break-lines)
 
+(require 'init-yaml)
+
+(require 'url-tools)
+
 ;;; Local Variables:
 ;;; coding: utf-8
 ;;; End:
