@@ -46,7 +46,11 @@
 ;;           json)))))
 
 ;; (request "excused")
-
+
+;; company english helper setting
+(push (expand-emacs-dir "packages/english-helper") load-path)
+(require 'company-english-helper)
+
 (provide 'init-translate)
 ;;; Local Variables:
 ;;; coding: utf-8

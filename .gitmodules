@@ -94,3 +94,6 @@
 [submodule "packages/yaml-mode"]
 	path = packages/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+[submodule "packages/english-helper"]
+	path = packages/english-helper
+	url = https://github.com/manateelazycat/company-english-helper.git
