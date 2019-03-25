@@ -2,9 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(setf erlang-root-dir "/usr/local/Cellar/erlang/21.2.4")
+(setf erlang-root-dir "/usr/local/Cellar/erlang/21.3")
 
-(push (concat erlang-root-dir "/lib/erlang/lib/tools-3.0.2/emacs") load-path)
+(push (concat erlang-root-dir "/lib/erlang/lib/tools-3.1/emacs/") load-path)
 
 (setf exec-path (cons (concat erlang-root-dir "/bin") exec-path))
 

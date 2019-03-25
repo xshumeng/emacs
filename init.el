@@ -72,6 +72,8 @@
 
 (require 'url-tools)
 
+(require 'init-latex)
+
 ;;; Local Variables:
 ;;; coding: utf-8
 ;;; End:

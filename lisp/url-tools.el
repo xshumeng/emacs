@@ -38,6 +38,12 @@
   (interactive)
   (let ((content (-region-content)))
     (message (decode-coding-string (url-unhex-string content) 'utf-8))))
+
+(defun decode-url-insert ()
+  "在选中区域末尾插入解码后的URL."
+  (interactive)
+  (let ((content (-region-content)))
+    (insert (format "\n\n%s" (decode-coding-string (url-unhex-string content) 'utf-8)))))
 )
 
 (provide 'url-tools)
