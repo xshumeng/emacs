@@ -74,6 +74,8 @@
 
 (require 'init-latex)
 
+(require 'init-lisp)
+
 ;;; Local Variables:
 ;;; coding: utf-8
 ;;; End:

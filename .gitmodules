@@ -97,3 +97,6 @@
 [submodule "packages/english-helper"]
 	path = packages/english-helper
 	url = https://github.com/manateelazycat/company-english-helper.git
+[submodule "packages/slime"]
+	path = packages/slime
+	url = https://github.com/slime/slime.git
