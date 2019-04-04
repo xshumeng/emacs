@@ -103,3 +103,9 @@
 [submodule "packages/webmode"]
 	path = packages/webmode
 	url = https://github.com/fxbois/web-mode.git
+[submodule "packages/htmlize"]
+	path = packages/htmlize
+	url = https://github.com/hniksic/emacs-htmlize.git
+[submodule "packages/reveal"]
+	path = packages/reveal
+	url = https://github.com/yjwen/org-reveal.git

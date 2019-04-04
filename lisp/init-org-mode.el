@@ -61,5 +61,10 @@
   )
 
 (setf truncate-lines nil)
+
+;; org reveal mode setting
+(feature (package-path "reveal") 'ox-reveal)
+(feature (package-path "htmlize") 'htmlize)
+
 (provide 'init-org-mode)
 ;;; init-org-mode.el ends here
