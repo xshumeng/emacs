@@ -100,3 +100,6 @@
 [submodule "packages/slime"]
 	path = packages/slime
 	url = https://github.com/slime/slime.git
+[submodule "packages/webmode"]
+	path = packages/webmode
+	url = https://github.com/fxbois/web-mode.git

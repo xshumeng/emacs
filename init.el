@@ -76,6 +76,8 @@
 
 (require 'init-lisp)
 
+(require 'init-webmode)
+
 ;;; Local Variables:
 ;;; coding: utf-8
 ;;; End:

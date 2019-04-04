@@ -18,6 +18,10 @@
   "Add `PATH' to the absolute directory of user's `emacs'."
   `(locate-user-emacs-file (convert-standard-filename ,path)))
 
+(defmacro package-path (package)
+  "Expand `PACKAGE''s path."
+  `(locate-user-emacs-file (convert-standard-filename (concat "packages/" ,package))))
+
 (defmacro add-custom-theme (path)
   "Load theme form `PATH'."
   `(add-to-list 'custom-theme-load-path ,path))
@@ -26,18 +30,25 @@
   "Add `REGEX' to `MODE' auto mode alist."
   `(add-to-list 'auto-mode-alist '(,regex . ,mode)))
 
-(defun feature (pkg-name &optional min-version no-refresh)
-  "安装插件`PKG-NAME'，可选参数`MIN-VERSION'和`NO-REFRESH'."
-  (if (package-installed-p pkg-name min-version)
-      t
-    (if (or (assoc pkg-name package-archive-contents) no-refresh)
-	    (if (boundp 'package-selected-packages)
-	        ;; Record this as a package the user installed explicitly
-	        (package-install pkg-name nil)
-	      (package-install pkg-name))
-      (progn
-	    (package-refresh-contents)
-	    (feature pkg-name min-version t)))))
+;; (defun feature (pkg-name &optional min-version no-refresh)
+;;   "安装插件`PKG-NAME'，可选参数`MIN-VERSION'和`NO-REFRESH'."
+;;   (if (package-installed-p pkg-name min-version)
+;;       t
+;;     (if (or (assoc pkg-name package-archive-contents) no-refresh)
+;; 	    (if (boundp 'package-selected-packages)
+;; 	        ;; Record this as a package the user installed explicitly
+;; 	        (package-install pkg-name nil)
+;; 	      (package-install pkg-name))
+;;       (progn
+;; 	    (package-refresh-contents)
+;; 	    (feature pkg-name min-version t)))))
+(defmacro feature (load-path feature &rest body)
+  "Load `FEATURE' form `LOAD-PATH'."
+  `(let ((path ,load-path))
+     (when (file-directory-p path)
+       (push path load-path)
+       (when (require ,feature (symbol-name ,feature) t)
+	 ,@body))))
 
 (if (fboundp 'with-eval-after-load)
     (defalias 'after-load 'with-eval-after-load)
