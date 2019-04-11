@@ -25,11 +25,16 @@
 ;;; Code:
 
 (push (expand-emacs-dir "packages/themes/dracula") custom-theme-load-path)
-
 (push (expand-emacs-dir "packages/themes/solarized") load-path)
 (push (expand-emacs-dir "packages/themes/solarized") custom-theme-load-path)
-
 (push (expand-emacs-dir "packages/themes/zenburn") custom-theme-load-path)
+(push (expand-emacs-dir "packages/themes/gruvbox") load-path)
+(feature (package-path "themes/autothemer") 'autothemer)
+(feature (package-path "themes/gruvbox") 'gruvbox)
+
+
+;; Beacon — Never lose your cursor again
+(feature (package-path "beacon") 'beacon (beacon-mode 1))
 
 (provide 'init-themes)
 ;;; init-themes.el ends here

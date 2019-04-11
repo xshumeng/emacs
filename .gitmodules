@@ -109,3 +109,12 @@
 [submodule "packages/reveal"]
 	path = packages/reveal
 	url = https://github.com/yjwen/org-reveal.git
+[submodule "packages/beacon"]
+	path = packages/beacon
+	url = https://github.com/Malabarba/beacon.git
+[submodule "packages/themes/gruvbox"]
+	path = packages/themes/gruvbox
+	url = https://github.com/greduan/emacs-theme-gruvbox.git
+[submodule "packages/themes/autothemer"]
+	path = packages/themes/autothemer
+	url = https://github.com/jasonm23/autothemer.git
