@@ -36,6 +36,9 @@
 ;; Beacon — Never lose your cursor again
 (feature (package-path "beacon") 'beacon (beacon-mode 1))
 
+(feature (package-path "indent-guides") 'highlight-indent-guides
+	 (setf highlight-indent-guides-method 'character))
+
 (provide 'init-themes)
 ;;; init-themes.el ends here
 ;;; Local Variables:

@@ -118,3 +118,6 @@
 [submodule "packages/themes/autothemer"]
 	path = packages/themes/autothemer
 	url = https://github.com/jasonm23/autothemer.git
+[submodule "packages/indent-guides"]
+	path = packages/indent-guides
+	url = https://github.com/DarthFennec/highlight-indent-guides.git
