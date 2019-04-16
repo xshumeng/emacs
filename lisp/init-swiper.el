@@ -26,6 +26,9 @@
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
+(feature (package-path "ivy-rich") 'ivy-rich (ivy-rich-mode)
+	 (setf ivy-format-function #'ivy-format-function-line))
+
 (provide 'init-swiper)
 ;;; Local Variables:
 ;;; coding: utf-8

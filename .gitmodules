@@ -121,3 +121,6 @@
 [submodule "packages/indent-guides"]
 	path = packages/indent-guides
 	url = https://github.com/DarthFennec/highlight-indent-guides.git
+[submodule "packages/ivy-rich"]
+	path = packages/ivy-rich
+	url = https://github.com/Yevgnen/ivy-rich.git
