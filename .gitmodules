@@ -124,3 +124,6 @@
 [submodule "packages/ivy-rich"]
 	path = packages/ivy-rich
 	url = https://github.com/Yevgnen/ivy-rich.git
+[submodule "packages/lua-mode"]
+	path = packages/lua-mode
+	url = https://github.com/immerrr/lua-mode.git
