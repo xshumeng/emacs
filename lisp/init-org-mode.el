@@ -58,7 +58,8 @@
   (add-to-list 'org-agenda-files "~/Data/geting-things-done")
   (define-key global-map "\C-cc" 'org-capture)
   (setq org-image-actual-width 500)
-  )
+  (when (member "Sarasa Mono SC" (font-family-list))
+    (set-face-attribute 'org-table nil :font "-*-Sarasa Mono SC-*-*-*-*-12-*-*-*-*-*-*-*")))
 
 (setf truncate-lines nil)
 
